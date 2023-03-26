@@ -40,19 +40,14 @@ const checkSecond = (secondFloat) => {
 
 const isVaildCoordinates = (coordinates) => {
   const [first, second] = splitString(coordinates);
-  console.log(checkSymbol(first));
-  console.log(checkSymbol(second));
   if (checkSymbol(first) && checkSymbol(second)) {
     const firstAns = checkFirst(first);
-    console.log(firstAns);
     const secondAns = checkSecond(second);
-    console.log("secondAns");
     if (firstAns && secondAns) return true;
   }
 
   return false;
 };
-
 
 module.exports = {
   splitString,
