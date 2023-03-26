@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1679817351269" clover="3.2.0">
-  <project timestamp="1679817351269" name="All files">
+<coverage generated="1679819335583" clover="3.2.0">
+  <project timestamp="1679819335583" name="All files">
     <metrics statements="35" coveredstatements="30" conditionals="22" coveredconditionals="16" methods="5" coveredmethods="5" elements="62" coveredelements="51" complexity="0" loc="35" ncloc="35" packages="1" files="1" classes="1"/>
     <file name="CoordinatesValidator.js" path="D:\code-file\codewars\CoordinatesValidator\CoordinatesValidator.js">
       <metrics statements="35" coveredstatements="30" conditionals="22" coveredconditionals="16" methods="5" coveredmethods="5"/>
