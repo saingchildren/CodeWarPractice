@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1679847178855" clover="3.2.0">
-  <project timestamp="1679847178856" name="All files">
-    <metrics statements="13" coveredstatements="12" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2" elements="21" coveredelements="19" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
-    <file name="FindTheParityOutlier.js" path="D:\code-file\codewars\FindTheParityOutlier\FindTheParityOutlier.js">
-      <metrics statements="13" coveredstatements="12" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
+<coverage generated="1679895809024" clover="3.2.0">
+  <project timestamp="1679895809024" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="21" coveredelements="21" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
+    <file name="HighestScoringWord.js" path="D:\code-file\codewars\HighestScoringWord\HighestScoringWord.js">
+      <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="2" count="9" type="cond" truecount="2" falsecount="0"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="10" count="8" type="cond" truecount="2" falsecount="0"/>
-      <line num="11" count="7" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
-      <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="18" count="0" type="stmt"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="25" type="stmt"/>
+      <line num="7" count="25" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="9" type="stmt"/>
+      <line num="12" count="9" type="stmt"/>
+      <line num="13" count="24" type="stmt"/>
+      <line num="16" count="9" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
       <line num="22" count="1" type="stmt"/>
+      <line num="23" count="8" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
