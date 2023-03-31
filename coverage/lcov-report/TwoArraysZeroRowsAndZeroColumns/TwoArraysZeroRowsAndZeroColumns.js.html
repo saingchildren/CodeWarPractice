@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for FindTheParityOutlier/FindTheParityOutlier.js</title>
+    <title>Code coverage report for TwoArraysZeroRowsAndZeroColumns/TwoArraysZeroRowsAndZeroColumns.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">FindTheParityOutlier</a> FindTheParityOutlier.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">TwoArraysZeroRowsAndZeroColumns</a> TwoArraysZeroRowsAndZeroColumns.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.33% </span>
+                <span class="strong">77.77% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>14/15</span>
+                <span class='fraction'>14/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">37.5% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/6</span>
+                <span class='fraction'>3/8</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.3% </span>
+                <span class="strong">73.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/13</span>
+                <span class='fraction'>11/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -85,50 +85,65 @@
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const categoryNumber = (num) =&gt; {
-  if (num % 2 === 0) return true;
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const plusNumIsNotZero = (num1, num2) =&gt; {
+  if (num1 + num2) return true;
   return false;
 };
 &nbsp;
-const FindTheParityOutlier = (arrayNum) =&gt; {
-  primeNum = [];
-  compositeNum = [];
-  for (const i of arrayNum) {
-    if (categoryNumber(i)) {
-      compositeNum.push(i);
-    } else {
-      primeNum.push(i);
+const countZeroRowsAndColumns = (arr1, arr2) =&gt; {
+  const [rows, cols] = [arr1.length, arr1[0].length];
+  const [rowNotZero, colNotZero] = [[], []];
+&nbsp;
+  for (let i = 0; i &lt; rows; i++) {
+    for (let j = 0; j &lt; cols; j++) {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (plusNumIsNotZero(arr1[i][j] + arr2[i][j])) {
+<span class="cstat-no" title="statement not covered" >        if (rowNotZero[i] === null) {</span>
+<span class="cstat-no" title="statement not covered" >          rowNotZero[i] = 1;</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (colNotZero[j] === null) {</span>
+<span class="cstat-no" title="statement not covered" >          colNotZero[j] = 1;</span>
+        }
+      }
     }
   }
 &nbsp;
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (primeNum.length === 1) return primeNum[0];
-<span class="cstat-no" title="statement not covered" >  return compositeNum[0];</span>
+  return rows - rowNotZero.length + (cols - colNotZero.length) - 2;
 };
 &nbsp;
-&nbsp;
-module.exports = { categoryNumber, FindTheParityOutlier };
+module.exports = { plusNumIsNotZero, countZeroRowsAndColumns };
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
