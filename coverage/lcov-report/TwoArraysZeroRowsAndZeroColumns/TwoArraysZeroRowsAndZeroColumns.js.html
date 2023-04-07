@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">77.77% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>14/18</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">37.5% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/8</span>
+                <span class='fraction'>6/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">73.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>11/15</span>
+                <span class='fraction'>18/18</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -90,11 +90,20 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -102,13 +111,12 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -118,32 +126,36 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const plusNumIsNotZero = (num1, num2) =&gt; {
-  if (num1 + num2) return true;
+  if (num1 + num2 !== 0) return true;
   return false;
 };
 &nbsp;
+const countOne = (arr) =&gt; {
+  return arr.filter((i) =&gt; i === 1).length;
+};
+&nbsp;
 const countZeroRowsAndColumns = (arr1, arr2) =&gt; {
-  const [rows, cols] = [arr1.length, arr1[0].length];
-  const [rowNotZero, colNotZero] = [[], []];
+  const rows = arr1.length;
+  const cols = arr1[0].length;
+  let [rowNotZero, colNotZero] = [[], []];
 &nbsp;
   for (let i = 0; i &lt; rows; i++) {
     for (let j = 0; j &lt; cols; j++) {
-      <span class="missing-if-branch" title="if path not taken" >I</span>if (plusNumIsNotZero(arr1[i][j] + arr2[i][j])) {
-<span class="cstat-no" title="statement not covered" >        if (rowNotZero[i] === null) {</span>
-<span class="cstat-no" title="statement not covered" >          rowNotZero[i] = 1;</span>
+      if (plusNumIsNotZero(arr1[i][j], arr2[i][j])) {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (rowNotZero[i] === undefined) {
+          rowNotZero[i] = 1;
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (colNotZero[j] === null) {</span>
-<span class="cstat-no" title="statement not covered" >          colNotZero[j] = 1;</span>
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (colNotZero[j] === undefined) {
+          colNotZero[j] = 1;
         }
       }
     }
   }
-&nbsp;
-  return rows - rowNotZero.length + (cols - colNotZero.length) - 2;
+  return rows - countOne(rowNotZero) + cols - countOne(colNotZero);
 };
 &nbsp;
-module.exports = { plusNumIsNotZero, countZeroRowsAndColumns };
+module.exports = { plusNumIsNotZero, countZeroRowsAndColumns, countOne };
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -151,7 +163,7 @@ module.exports = { plusNumIsNotZero, countZeroRowsAndColumns };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-31T01:00:06.503Z
+                at 2023-04-07T08:02:04.391Z
             </div>
         <script src="../prettify.js"></script>
         <script>
